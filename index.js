@@ -12,6 +12,8 @@ function applyInitialMode() {
     const darkMode = JSON.parse(localStorage.getItem('darkMode')) ?? false;
     if (darkMode) {
         document.body.classList.add('dark-mode');
+    } else {
+        document.body.classList.remove('dark-mode');
     }
 }
 
