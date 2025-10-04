@@ -1,10 +1,10 @@
 export function toggleDarkMode() {
     const body = document.body;
     body.classList.toggle('dark-mode');
-    updateLocalStorage(body.classList.contains('dark-mode'));
+    updateDarkModePreference(body.classList.contains('dark-mode'));
 }
 
-function updateLocalStorage(isDarkMode) {
+function updateDarkModePreference(isDarkMode) {
     localStorage.setItem('darkMode', JSON.stringify(isDarkMode));
 }
 
