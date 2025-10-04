@@ -17,4 +17,8 @@ function applyInitialMode() {
     }
 }
 
+// Adding event listener for button click to toggle dark mode
+const toggleButton = document.getElementById('toggle-dark-mode-button');
+toggleButton.addEventListener('click', toggleDarkMode);
+
 window.onload = applyInitialMode;
