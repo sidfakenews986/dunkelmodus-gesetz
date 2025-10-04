@@ -9,7 +9,7 @@ function updateLocalStorage(isDarkMode) {
 }
 
 function applyInitialMode() {
-    const darkMode = JSON.parse(localStorage.getItem('darkMode')) === null ? false : JSON.parse(localStorage.getItem('darkMode'));
+    const darkMode = JSON.parse(localStorage.getItem('darkMode')) || false;
     if (darkMode) {
         document.body.classList.add('dark-mode');
     }
